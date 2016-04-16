@@ -1,0 +1,47 @@
+<div class="movie-card" ng-click="editCard()">
+
+    <header class="title">
+        {{data.Title}}
+    </header>
+
+    <main class="movie-info">
+        <img class="image-poster" src="{{data.Poster}}">
+        <div class="year">Year:{{data.Year}}</div>
+        <div class="genre">Genre:{{data.Genre}}</div>
+        <div class="director">Director:{{data.Director}}</div>
+        <div class="actors">Actors:{{data.Actors}}</div>
+        <div class="plot">Plot:{{data.Plot}}</div>
+    </main>
+
+
+</div>
+
+
+<div class="modal" ng-show="displayModal">
+
+
+</div>
+
+
+
+    <div class="edit-movie-card" ng-show="displayModal">
+
+        <header class="title">
+            {{data.Title}}
+        </header>
+
+        <main class="movie-info">
+            <div class="year"><span class="label">Year:</span><textarea ng-model="editData.Year" rows="1" cols="10"></textarea> </div>
+            <div class="genre"><span class="label"> Genre:  </span> <textarea type="text" ng-model="editData.Genre" rows="1" cols="30"></textarea></div>
+            <div class="director"><span class="label"> Director:</span> <textarea type="textarea" ng-model="editData.Director" rows="1" cols="30"></textarea></div>
+            <div class="actors"><span class="label">Actors:</span><textarea type="text" ng-model="editData.Actors" rows="1" cols="30"></textarea></div>
+            <div class="plot"><span class="label">Plot:</span> <textarea type="text" ng-model="editData.Plot" rows="3" cols="30"></textarea></div>
+        </main>
+
+         <input type="button" value="Save" ng-click="saveEdittedDetails()">
+         <input type="button" value="Reset" ng-click="reset()">
+
+    </div>
+
+
+

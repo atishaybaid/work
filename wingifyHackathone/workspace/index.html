@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+</head>
+    <body ng-controller="mainCtrl">
+
+
+        <nav class="filters">
+
+          <div class="search">
+            <input type="text" class="input-box" placeholder="&#128269;search" ng-model="searchText" ng-keypress="getResult($event)">
+           </div>
+
+            <ul class="filter-list" ng-click="applyFilter($event)">
+                <li class="filter-item">
+                 <span class="menu-txt">All</span>
+                </li>
+                <li class="filter-item">
+                 <span class="menu-txt">Action</span>
+                </li>
+                <li class="filter-item">
+                 <span class="menu-txt">Crime</span>
+                </li>
+                <li class="filter-item">
+                 <span class="menu-txt">Drama</span>
+                </li>
+                <li class="filter-item">
+                 <span class="menu-txt">Mystery</span>
+                 </li>
+                <li class="filter-item">
+                 <span class="menu-txt">Sci-Fi</span>
+                </li>
+                <li class="filter-item">
+                 <span class="menu-txt">Adventure</span>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+         <main class="container">
+        <div ng-repeat="card in cards | filter:genreFilter track by $index" class="card-list">
+            <movie-card data=card local=cards>
+            </movie-card>
+
+
+        </div>
+
+       <hr>
+
+
+        </main>
+
+
+
+
+
+
+
+    </body>
+</html>
