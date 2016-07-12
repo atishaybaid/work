@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+    <main id="container">
+        <div id="title">
+            <span id="amount">Amount  {{amount}}</span>
+            <span id="tid">Transction ID  {{tranasctionID}}</span>
+        </div>
+        <div id="payment-header">
+        <span id="payment-text">Choose A payment Method</span>
+        </div>
+        <aside id="payment-methods">
+            <ul id="payment-method-list">
+                <li class="payment-item">
+                    <a href="#">Credit Card</a>
+                </li>
+                <li class="payment-item">
+                    <a href="#">Debit Card</a>
+                </li>
+                <li class="payment-item">
+                    <a href="#">Net Banking</a>
+                </li>
+                <li class="payment-item">
+                    <a href="#">EMI</a>
+                </li>
+                <li class="payment-item">
+                    <a href="#">Cash Card</a>
+                </li>
+                <li class="payment-item">
+                    <a href="#">Reward</a>
+                </li>
+                <li class="payment-item">
+                    <a href="#">COD</a>
+                </li>
+            </ul>
+        </aside>
+        <main id="content">
+            <div id="select-card">
+                <div class="card" id="first-card">
+                    <span id="select-card-txt">Select a card</span>
+                    <input type="radio" name="card-one" id="">
+                    <span>Card Name<!-- </br>5326xxxxxxxxxxxxxxxxxx4891 --></span>
+                    <div class="card-code">
+                        <label>Card Code</label>
+                        <input type="password" class="cvv" placeholder="cvv">
+                    </div>
+                     <input type="button" name="PAY NOW" value="PAY NOW=">
+                </div>
+                <div class="card" id="second-card">
+                    <span>Select a card</span>
+                    <input type="radio" name="card-one" id="">
+                    <span>Card Name</span>
+                    <span>Card Code</span>
+                    <input type="password" placeholder="cvv" maxlength="3">
+                    <input type="button" name="PAY NOW" value="PAY NOW=">
+                </div>
+
+            </div>
+
+            <form>
+                <input type="number" placeholder="Card Number" name="" id="">
+                <input type="text" placeholder="Name on the card" name="" id="">
+                <input type="password" placeholder="CVV" name="" id="">
+                <select>
+                   <option value="1">2001</option>
+                   <option value="2">2002</option>
+                   <option value="3">2003</option>
+                   <option value="4">2004</option>
+                   <option value="5">2005</option>
+                   <option value="6">2006</option>
+                   <option value="7">2007</option>
+                   <option value="8">2008</option>
+                   <option value="9">2009</option>
+                   <option value="10">2010</option>
+                   <option value="11">2011</option>
+                   <option value="12">2012</option>
+                   <option value="13">2013</option>
+                   <option value="14">2014</option>
+                   <option value="15">2015</option>
+                   <option value="16">2016</option>
+                   <option value="17">2017</option>
+                   <option value="18">2018</option>
+                   <option value="19">2019</option>
+                   <option value="20">2020</option>
+                   <option value="21">2021</option>
+                   <option value="22">2022</option>
+                   <option value="23">2023</option>
+                   <option value="24">2024</option>
+                   <option value="25">2025</option>
+                </select>
+
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <input type="checkbox" name="" id=""><label>Store This  Card</label>
+                <input type="button" value="PAY NOW">
+
+
+            </form>
+
+        </main>
+
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+#container{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family:Arial;
+}
+
+#title{
+    height: 40px;
+    background-color: #6ac451;
+    line-height: 14px;
+    color:#fff;
+    padding:12px 25px 0 20px;
+    border-bottom: 1px #d6d6d6 solid;
+
+
+}
+
+#tid{
+    float: left;
+}
+
+#payment-header{
+     padding:12px 25px 0 20px;
+     border-bottom: 1px #d6d6d6 solid;
+
+
+
+}
+
+#payment-text{
+    line-height: 14px;
+    font-weight: 600;
+}
+
+#payment-method{
+    background-color: rgb(246,246,246);
+
+}
+#payment-method-list{
+    list-style-type: none;
+    width:300px;
+     float: left;
+     background-color: rgb(246,246,246);
+     padding: 0px;
+}
+.payment-item{
+    display:block;
+    line-height: 40px;
+    font-size: 13px;
+    border-bottom: 1px #d6d6d6 solid;
+
+}
+.payment-item > a{
+    text-decoration: none;
+    color:inherit;
+    margin-left: 5px;
+
+
+}
+
+.payment-item>a:hover{
+    cursor: pointer;
+
+
+}
+
+#content{
+    float: left;
+}
+
+#first-card{
+    height: 60px;
+    padding:5px;
+    border-bottom: 1px #d6d6d6 solid;
+
+}
+
+#select-card-txt{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.card-code{
+    margin-left:50px;
+    width: 100px;
+}
+.cvv{
+    width:80%
+}
